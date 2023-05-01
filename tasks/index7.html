@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7</title>
+</head>
+
+<body>
+	<p>Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту (авто, автобус,
+		літак - випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х гідів(використати -
+		radio buttons). Ціни визначте самі. Підрахувати загальну вартість.
+	</p>
+	<div id="container">
+		<div>
+			<label for="">
+				Вибрати транспорт
+				<select name="" id="transport">
+					<option value="1000">Автобус - 1000</option>
+					<option value="2500">Авто- 2500</option>
+					<option value="5000">Літак - 5000</option>
+				</select>
+			</label>
+		</div>
+		<div>
+			<h3>Харчування</h3>
+			<label for="">
+				Авокадо-тост - 150
+				<input type="checkbox" value="150" checked>
+			</label>
+			<label for="">
+				Борщ - 90
+				<input type="checkbox" value="90">
+			</label>
+			<label for="">
+				Бутерброд - 40
+				<input type="checkbox" value="40">
+			</label>
+		</div>
+		<div>
+			<h3>Гід</h3>
+			<div>
+				<label for="Anastasiya">Анастасія - 500</label>
+				<input name="gid" id="Anastasiya" type="radio" value="500">
+			</div>
+			<div>
+				<label for="Dmitro">Дмитро - 200</label>
+				<input name="gid" id="Dmitro" type="radio" value="200">
+			</div>
+			<div>
+				<label for="Natalya">Наталя - 1500</label>
+				<input name="gid" id="Natalya" type="radio" value="1500" checked>
+			</div>
+		</div>
+		<button id="result">Get sum</button>
+	</div>
+</body>
+<script src="../script/script7.js"></script>
+</html>
